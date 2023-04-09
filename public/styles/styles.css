@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap');
+
+
+*{
+    padding:0px;
+    margin: 0px;
+    color: white;
+    font-family: 'Montserrat', 'Poppins', sans-serif;
+
+}
+body{
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr;
+}
+img{
+    width: 80px;
+    border-radius: 50%;
+}
+#sidebar-section{
+    background-color: rgba(108, 108, 108, 0.927);
+}
+#sidebar-section #profile{
+    display: flex;
+    padding: 4px;
+    border: 2px solid green;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+#sidebar-section #my-day{
+    color: black;
+    background-color: whitesmoke;
+    margin: 8px;
+    font-size: large;
+    margin-top: 20px;
+}
+
+#main-section{
+    background-image: url("./background.jpg");
+    height: 100vh;
+    border: 2px solid pink;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+#sub-section{
+    margin: 30px;
+}
+#sub-section #task-list{
+    font-size: large;
+    margin: 20px;
+    list-style: none;
+}
+#sub-section #task-list li{
+    color: black;
+    border-radius: 4px;
+    background-color: whitesmoke;
+    margin-top: 5px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#sub-section #task-list li:hover{
+    transform: scale(1.02);
+}
+.task-icons{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.task-name{
+    color: black;
+}
+
+.task-icons button, .task-icons i{
+    color: black;
+    border-style: none;
+}
+#add-task-section{
+    margin: 20px;
+}
+#add-task-section input{
+    width: 100%;
+    border-radius: 4px;
+    padding: 4px;
+    color: black;
+    font-size: x-large;
+}
+.warning{
+    background-color: rgb(164, 164, 161);
+}
+.task-done{
+    text-decoration: line-through;
+}
+@media screen and (max-width: 600px) {
+    body{
+        display: block;
+    }
+    #sidebar-section{
+        display: none;
+    }
+}

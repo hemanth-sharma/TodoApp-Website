@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MS TO-DO</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../styles/styles.css">
+
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <section id="sidebar-section">
+        <div id="profile">
+            <img src="../uploads/cat2.jpg" alt="not display yet" id="profile-img">
+            <div id="user-info">
+                <div id="username">Hemant Sharma</div>
+                <div id="email">hemantsharmapok9@gmail.com</div>
+            </div>
+        </div>
+        <button id="logout">Logout</button>
+        <div id="my-day">My Day</div>
+    </section>
+    <section id="main-section">
+        <div id="sub-section">
+            <header id="header">
+                <div id="right"><h1>My Day</h1></div>
+                <div id="date-time">Wednesday 12 Oct</div>
+            </header>
+            <ul id="task-list">
+                <li>
+                    <div class="task-name" contenteditable="false">Task 1</div>
+                    <div class="task-icons">
+                        <input type="checkbox" name="btn" class="checkbtn">
+                        <button class="update-btn click-style"><i class="fa fa-pencil"></i></button>
+                        <button class="delete-btn">X</button>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="add-task-section">
+            <input type="text" id="input-field" placeholder="Add a task">
+        </div>
+    </section>
+    
+    
+</body>
+</html>
